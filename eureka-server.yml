@@ -11,3 +11,15 @@ eureka:
     fetch-registry: false
   server:
     enable-self-preservation: false
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  server:
+    port: 9090 
